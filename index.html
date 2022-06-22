@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mike</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      width: 100%;
+      height: 100vh;
+      display: flex;
+    }
+
+    .mike {
+      margin: auto;
+      width: 24.5rem;
+      height: 27.875rem;
+      background-color: #81b82b;
+      position: relative;
+      border-radius: 50% 50% 50% 50% / 66% 66% 34% 34%;
+    }
+
+    .mike::before {
+      content: '';
+      width: 5rem;
+      height: .625rem;
+      position: absolute;
+      bottom: 1.875rem;
+      left: 50%;
+      transform: translate(-50%);
+      background-color: #76a328;
+      border-radius: 50%;
+    }
+
+    .eye {
+      width: 12.5rem;
+      height: 12.5rem;
+      background-color: #fff;
+      border-radius: 50%;
+      outline: .625rem solid #76a328;
+      position: absolute;
+      top: 2.5rem;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .eye::before {
+      content: '';
+      width: 7.5rem;
+      height: 7.5rem;
+      border: .3125rem solid currentColor;
+      position: absolute;
+      border: .3125rem solid currentColor;
+      border-radius: 50%;
+      bottom: 1.875rem;
+      left: 50%;
+      transform: translate(-50%);
+      background-image: linear-gradient(#1f537b, #05d5ce);
+    }
+
+    .pupil {
+      width: 5.625rem;
+      height: 5.625rem;
+      background-color: currentColor;
+      border-radius: 50%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .pupil::before {
+      content: '';
+      width: 1.25rem;
+      height: 1.25rem;
+      background-color: #fff;
+      position: absolute;
+      top: .6875rem;
+      border-radius: 50%;
+    }
+
+    .mounth {
+      width: 11.25rem;
+      height: 5rem;
+      background-color: currentColor;
+      position: absolute;
+      bottom: 3.125rem;
+      left: 50%;
+      transform: translateX(-50%);
+      border-radius: 50%;
+      overflow: hidden;
+    }
+
+    .mounth::before {
+      content: '';
+      width: 100%;
+      height: 3.125rem;
+      background-color: #989b4c;
+      position: absolute;
+      bottom: -1.5625rem;
+    }
+
+    .teeth {
+      width: 2.1875rem;
+      height: 2.1875rem;
+      position: absolute;
+      background-color: #fff;
+      border-radius: 50%;
+      left: 1.5625rem;
+      bottom: -1rem;
+      box-shadow: 2.0625rem .25rem, 4.125rem .25rem, 6.1875rem .25rem;
+      color: #fff;
+    }
+
+    .ear {
+      width: 5rem;
+      height: 5rem;
+      box-shadow: -0.9375rem .9375rem 0  .3125rem #a09e71;
+      border-radius: 50%;
+      position: absolute;
+      top: -0.875rem;
+      left: 6.875rem;
+      z-index: -1;
+    }
+
+    .ear--r {
+      left: initial;
+      right: 7.125rem;
+      box-shadow: .9375rem .9375rem 0 .3125rem #a09e71;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="mike">
+
+    <div class="ear"></div>
+    <div class="ear ear--r"></div>
+
+    <div class="eye">
+      <div class="pupil"></div>
+    </div>
+
+    <div class="mounth">
+      <div class="teeth"></div>
+    </div>
+  </div>
+</body>
+
+</html>
